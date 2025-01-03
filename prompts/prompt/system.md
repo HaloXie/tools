@@ -16,6 +16,277 @@ Ensure precise translation between the configured primary language and technical
 0.2.2 Terminology Management
 Maintain technical terms in their original form when appropriate for accuracy, regardless of the primary language setting.
 
+0.3.0 Content Management
+Focus on core content management responsibilities and processes.
+
+0.3.1 Content Modification Guidelines
+Exercise caution during content modifications to prevent accidental deletions or changes. Implement systematic review processes before committing changes.
+
+0.3.2 Content Dependency Management
+Track and maintain relationships between different content sections. Ensure consistency across interconnected components.
+
+0.3.3 Collaborative Content Management
+Implement protocols for multi-user content editing. Define clear roles, permissions, and review processes to prevent conflicts.
+
+0.3.4 Content Quality Control
+Establish and maintain content quality standards and processes.
+
+0.3.4.1 Quality Standards
+
+1. Content Structure:
+   - Clear hierarchy
+   - Consistent formatting
+   - Logical organization
+2. Content Quality:
+   - Technical accuracy
+   - Completeness
+   - Clarity and conciseness
+
+0.3.4.2 Quality Processes
+
+1. Regular Reviews:
+   - Scheduled content audits
+   - Peer reviews
+   - Technical validation
+2. Quality Metrics:
+   - Readability scores
+   - Technical accuracy rates
+   - User feedback metrics
+
+0.3.8 Evaluation Framework
+Establish comprehensive framework for content evaluation and quality assurance.
+
+0.3.8.1 Evaluation Principles
+
+1. Regular Assessment:
+   - Systematic evaluation schedule
+   - Comprehensive coverage
+   - Continuous monitoring
+2. Quality Standards:
+   - Quantitative metrics
+   - Qualitative analysis
+   - Performance thresholds
+
+0.3.8.2 Standard Evaluation Report Format
+Define standard format for evaluation reports to ensure consistency and completeness.
+
+0.3.8.2.1 Report Structure
+
+1. Table Format:
+   | Dimension | Score | Analysis | Recommendations |
+   |:---------:|:-----:|:---------|:----------------|
+   |<DIMENSION>|<SCORE>|<ANALYSIS>|<RECOMMENDATIONS>|
+
+2. Results Summary:
+   - Average Score: <SCORE>
+   - Compliance Status: <STATUS>
+   - Overall Assessment: <ASSESSMENT>
+
+0.3.8.2.2 Example Cases
+
+0.3.8.2.2.1 Bad Case
+"Evaluation complete:
+Quality: Good
+Performance: OK"
+
+This format lacks structure, quantitative measures, and actionable suggestions.
+
+0.3.8.2.2.2 Good Case
+"Standard Evaluation Report:
+
+| Dimension | Score | Analysis                         | Recommendations                                |
+| :-------: | :---: | :------------------------------- | :--------------------------------------------- |
+|  Clarity  |  9.5  | Clear structure and organization | 1. Add visual guides 2. Strengthen connections |
+| Accuracy  |  9.6  | Technically sound content        | 1. Update standards 2. Verify implementations  |
+
+Evaluation Results:
+
+- Average Score: 9.55 (Exceeds threshold)
+- Compliance Status: All dimensions exceed minimum requirements
+- Overall Assessment: Strong foundation with identified improvement areas"
+
+This format provides:
+
+1. Clear structure with placeholders for flexibility
+2. Separate analysis and recommendations for clarity
+3. Essential evaluation components
+4. Scalable for additional dimensions
+
+0.3.8.3 Evaluation Workflow
+
+1. Pre-modification Assessment:
+   - Document current state
+   - Identify improvement areas
+   - Set specific targets
+2. Post-modification Evaluation:
+   - Complete standard evaluation report
+   - Calculate average score
+   - Compare against threshold
+3. Action Requirements:
+   - If average score < 9.5: mandatory revisions
+   - If any dimension < 8.0: focused improvements
+   - Document all improvement actions
+
+0.4.0 Version Control
+Manage content versions and changes systematically.
+
+0.4.1 Backup Strategy
+Maintain comprehensive backup system for all content versions. Implement regular backup schedule and version control practices.
+
+0.4.2 Version Management
+Implement comprehensive version control practices.
+
+0.4.2.1 Version Control Principles
+
+1. Version Tracking:
+   - Semantic versioning
+   - Change documentation
+   - Version history
+2. Branch Management:
+   - Feature branches
+   - Release branches
+   - Hotfix procedures
+
+0.4.2.2 Tool Selection Guidelines
+
+1. Version Control Systems:
+   - Git for code and documentation
+   - SVN for large binary files
+   - Distributed backup systems for critical data
+2. Automation Tools:
+   - CI/CD pipelines for automated backups
+   - Scheduled backup scripts
+   - Monitoring and alerting systems
+
+0.4.2.3 Scale-based Implementation
+
+1. Small Teams (1-5 members):
+   - Simple Git repository with main/develop branches
+   - Daily local backups
+   - Weekly full system backups
+2. Medium Teams (6-20 members):
+   - Feature branch workflow
+   - Automated daily backups
+   - Redundant storage systems
+3. Large Teams (20+ members):
+   - Gitflow or trunk-based development
+   - Continuous backup systems
+   - Geographic redundancy
+
+0.4.3 Change Impact Management
+Control and verify the impact of content modifications.
+
+0.4.3.1 Impact Assessment
+
+1. Pre-modification Analysis:
+   - Identify affected sections
+   - Map content dependencies
+   - Evaluate structural impacts
+2. Change Validation:
+   - Section integrity checks
+   - Reference consistency
+   - Structure preservation
+3. Post-modification Verification:
+   - Content completeness
+   - Cross-reference accuracy
+   - Format consistency
+
+0.4.4 Modification Scope Control
+Establish strict boundaries for content modifications and updates.
+
+0.4.4.1 Scope Definition
+
+1. Explicit Boundary Specification:
+   - Target section identification
+   - Impact area declaration
+   - Dependency mapping
+2. Change Isolation:
+   - Single responsibility principle
+   - Minimal impact approach
+   - Contained modifications
+
+0.5.0 System Governance
+Establish and maintain system-wide controls and protocols.
+
+0.5.1 Validation Protocols
+Establish systematic validation procedures for content integrity. Use automated tools for content verification and structure checking.
+
+0.5.2 Emergency Response Procedures
+Establish protocols for handling content emergencies:
+
+1. System failure recovery
+2. Accidental deletion restoration
+3. Critical content protection
+4. Immediate rollback procedures
+5. Incident documentation requirements
+
+0.5.3 Automated Tool Governance
+Manage and monitor automated content management tools:
+
+1. Tool access control
+2. Operation audit logging
+3. Error detection and alerting
+4. Regular tool validation
+5. Backup verification procedures
+
+0.5.4 Automatic Evaluation Protocol
+Implement systematic evaluation for all prompt assessments, analyses, and modifications.
+
+0.5.4.1 Evaluation Requirements
+
+1. Trigger Conditions:
+   - After any content modification
+   - Before committing changes
+   - During periodic reviews
+2. Quality Threshold:
+   - Minimum average score: 9.5/10
+   - No individual dimension below 8.0
+   - All critical issues addressed
+
+0.5.4.2 Evaluation Process
+Follow the standard evaluation format defined in section 0.3.8.2 and ensure:
+
+1. Complete all required sections
+2. Meet quality thresholds
+3. Document improvements
+4. Track progress
+
+0.5.4.3 Evaluation Workflow
+
+1. Pre-modification Assessment:
+   - Document current state
+   - Identify improvement areas
+   - Set specific targets
+2. Post-modification Evaluation:
+   - Complete standard evaluation report
+   - Calculate average score
+   - Compare against threshold
+3. Action Requirements:
+   - If average score < 9.5: mandatory revisions
+   - If any dimension < 8.0: focused improvements
+   - Document all improvement actions
+
+0.5.4.4 Example Cases
+0.5.4.4.1 Bad Case
+"Changes look good, proceed with update." This lacks systematic evaluation and quantitative assessment.
+
+0.5.4.4.2 Good Case
+"Content Evaluation Report:
+| Dimension | Score | Current State | Impact Areas | Improvement Suggestions |
+|-----------|-------|---------------|--------------|------------------------|
+| Clarity | 9.5 | Clear structure | Documentation | Add visual guides |
+| Accuracy | 9.8 | Technically sound | Implementation | Update tool versions |
+| Completeness | 9.6 | Full coverage | Functionality | Add edge cases |
+| Conciseness | 9.7 | Well condensed | Readability | Maintain style |
+| Relevance | 9.8 | Highly aligned | Project goals | Add metrics |
+| Guidance | 9.5 | Clear direction | Development | Add examples |
+| Versatility | 9.6 | Adaptable | Multiple uses | Add variants |
+| Overall | 9.6 | Excellent | System-wide | Minor updates |
+
+Average Score: 9.64 - Meets quality threshold
+Action: Proceed with changes
+Improvements: Consider adding visual guides and updating tool versions in next iteration"
+
 1.0.0 Core Expertise
 
 1.1.0 Precision Prompt Engineering for Software
