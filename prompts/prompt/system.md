@@ -89,45 +89,93 @@ Define standard format for evaluation reports to ensure consistency and complete
 
 0.3.8.2.1 Report Structure
 
-1. Table Format:
+IMPORTANT: All evaluations MUST follow this standardized format:
+
+1. Evaluation Table:
    | Dimension | Score | Analysis | Recommendations |
    |:---------:|:-----:|:---------|:----------------|
-   |<DIMENSION>|<SCORE>|<ANALYSIS>|<RECOMMENDATIONS>|
 
-2. Results Summary:
-   - Average Score: <SCORE>
-   - Compliance Status: <STATUS>
-   - Overall Assessment: <ASSESSMENT>
+   Format Requirements:
 
-0.3.8.2.2 Example Cases
+   - Dimension and Score columns must be center-aligned
+   - Analysis and Recommendations columns must be left-aligned
+   - All columns must maintain consistent spacing
+   - Content must not break table formatting
+   - Each dimension must be evaluated separately
+   - Scores must follow the defined scoring system
+   - Analysis must be objective and evidence-based
+   - Recommendations must be actionable and specific
 
-0.3.8.2.2.1 Bad Case
+2. Results Summary (Required):
+   - Average Score
+   - Compliance Status
+   - Overall Assessment
+   - Key Action Items
+
+0.3.8.2.2 Format Validation
+
+Before submitting any evaluation:
+
+1. Verify table structure compliance
+2. Ensure all required sections are complete
+3. Validate formatting consistency
+4. Check alignment requirements
+5. Confirm results summary inclusion
+
+0.3.8.2.3 Example Cases
+
+0.3.8.2.3.1 Non-Compliant Format
 "Evaluation complete:
 Quality: Good
 Performance: OK"
 
-This format lacks structure, quantitative measures, and actionable suggestions.
+This format is non-compliant because it:
 
-0.3.8.2.2.2 Good Case
-"Standard Evaluation Report:
+- Lacks required table structure
+- Missing quantitative measures
+- No clear analysis or recommendations
+- Incomplete results summary
 
-| Dimension | Score | Analysis                         | Recommendations                                |
-| :-------: | :---: | :------------------------------- | :--------------------------------------------- |
-|  Clarity  |  9.5  | Clear structure and organization | 1. Add visual guides 2. Strengthen connections |
-| Accuracy  |  9.6  | Technically sound content        | 1. Update standards 2. Verify implementations  |
+  0.3.8.2.3.2 Compliant Format
+  "Standard Evaluation Report:
+
+| Dimension |  Score  | Analysis                                          | Recommendations                                        |
+| :-------: | :-----: | :------------------------------------------------ | :----------------------------------------------------- |
+| Structure | [Score] | Clear hierarchical organization with logical flow | 1. Add section cross-references 2. Define dependencies |
+|  Clarity  | [Score] | Well-defined protocols and standards              | 1. Enhance documentation 2. Add relationship diagrams  |
 
 Evaluation Results:
 
-- Average Score: 9.55 (Exceeds threshold)
-- Compliance Status: All dimensions exceed minimum requirements
-- Overall Assessment: Strong foundation with identified improvement areas"
+- Average Score: [Calculated Average]
+- Compliance Status: [Status based on defined thresholds]
+- Overall Assessment: [Summary of findings]
+- Key Actions: [Priority improvements]"
 
-This format provides:
+This format demonstrates:
 
-1. Clear structure with placeholders for flexibility
-2. Separate analysis and recommendations for clarity
-3. Essential evaluation components
-4. Scalable for additional dimensions
+1. Proper table structure
+2. Correct column alignment
+3. Complete analysis
+4. Actionable recommendations
+5. Comprehensive summary
+
+0.3.8.2.4 Cross-References
+
+This format must be used in conjunction with:
+
+- Evaluation Framework (Section 9.0.0)
+- Quality Standards (Section 0.3.4)
+- Scoring Criteria (Section 9.2.2)
+
+  0.3.8.2.5 Implementation Requirements
+
+When conducting evaluations:
+
+1. Always start with the standard table format
+2. Complete all required sections
+3. Validate against format requirements
+4. Include comprehensive results summary
+5. Provide actionable recommendations
 
 0.3.8.3 Evaluation Workflow
 
