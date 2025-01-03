@@ -480,4 +480,153 @@ Explore meta learning techniques for AI systems in software. Enable models to le
 8.13.2 Auto Optimization Algorithm Development
 Develop auto optimization algorithms for prompt engineering and documentation. Automatically improve performance.
 
+9.0.0 Prompt Evaluation Framework
+
+9.1.0 Evaluation Dimensions Overview
+Comprehensive framework for evaluating prompt quality and effectiveness in software development contexts.
+
+9.2.0 Clarity
+9.2.1 Definition
+Evaluate whether the prompt content is easy to understand, with clear structure and organized expression. This includes simple language use, clear hierarchy, and proper explanation of technical concepts.
+
+9.2.2 Scoring Criteria
+9.2.2.1 Basic (1-2 points): Chaotic content, incoherent logic, obscure language, unclear structure.
+9.2.2.2 Developing (3-4 points): Some unclear logic or ambiguous expressions, insufficient technical explanations.
+9.2.2.3 Competent (5-6 points): Generally clear content, coherent logic, basic structure present.
+9.2.2.4 Proficient (7-8 points): Clear content, rigorous logic, well-structured, good technical explanations.
+9.2.2.5 Expert (9-10 points): Extremely clear, perfect logic, excellent structure, comprehensive technical clarity.
+
+9.2.3 Example Cases
+9.2.3.1 Bad Case (1-2 points)
+"Update the API and make it better. Fix any issues you find. Just do what needs to be done." This prompt lacks clear structure, specific requirements, and technical details about the API, making it impossible to understand the scope and objectives.
+
+9.2.3.2 Good Case (9-10 points)
+"Upgrade the REST API from v1.0 to v2.0 by: 1) Implementing OAuth 2.0 authentication to replace basic auth, 2) Converting response format from XML to JSON with specified schema, 3) Adding rate limiting of 100 requests per minute per client, 4) Implementing endpoint versioning using URL prefixes. Document all changes in the OpenAPI specification."
+
+9.3.0 Accuracy
+9.3.1 Definition
+Measure the accuracy of technical descriptions, concepts, methodologies, and industry standards in software development context.
+
+9.3.2 Scoring Criteria
+9.3.2.1 Basic (1-2 points): Multiple technical inaccuracies, misaligned with industry standards.
+9.3.2.2 Developing (3-4 points): Several technical errors, some deviation from best practices.
+9.3.2.3 Competent (5-6 points): Generally accurate, minor technical imprecisions.
+9.3.2.4 Proficient (7-8 points): Highly accurate, aligned with industry standards.
+9.3.2.5 Expert (9-10 points): Complete technical accuracy, perfect alignment with industry standards.
+
+9.3.3 Example Cases
+9.3.3.1 Bad Case (1-2 points)
+"Implement blockchain technology in our database to make it 100% secure and infinitely scalable. Use any programming language since they're all the same for this purpose." This prompt contains multiple technical inaccuracies about blockchain capabilities and programming language characteristics.
+
+9.3.3.2 Good Case (9-10 points)
+"Implement a distributed caching layer using Redis 7.2 with a master-replica configuration. Set TTL to 1 hour for session data and 24 hours for static content. Configure maxmemory-policy as allkeys-lru with 2GB memory limit. Ensure TLS 1.3 encryption for all connections and implement retry mechanism with exponential backoff."
+
+9.4.0 Completeness
+9.4.1 Definition
+Assess whether the prompt covers all necessary aspects of the software development task, including requirements, constraints, and technical considerations.
+
+9.4.2 Scoring Criteria
+9.4.2.1 Basic (1-2 points): Missing critical information, incomplete technical requirements.
+9.4.2.2 Developing (3-4 points): Some key information missing, partial technical coverage.
+9.4.2.3 Competent (5-6 points): Covers main requirements, some details missing.
+9.4.2.4 Proficient (7-8 points): Comprehensive coverage, minor details might be missing.
+9.4.2.5 Expert (9-10 points): Complete coverage of all aspects, including edge cases.
+
+9.4.3 Example Cases
+9.4.3.1 Bad Case (1-2 points)
+"Write some unit tests for the login function." This prompt misses critical information about test scenarios, expected behaviors, edge cases, testing framework, and environment setup.
+
+9.4.3.2 Good Case (9-10 points)
+"Create unit tests for the user authentication module using Jest 29.x. Cover: 1) Successful login with valid credentials, 2) Failed login attempts with invalid password/username, 3) Account lockout after 3 failed attempts, 4) Password reset flow, 5) Token expiration handling, 6) Rate limiting tests. Achieve >90% code coverage. Mock external dependencies using Jest's mock functions. Include setup and teardown procedures for test database."
+
+9.5.0 Conciseness
+9.5.1 Definition
+Evaluate the efficiency of information delivery, avoiding redundancy while maintaining technical clarity.
+
+9.5.2 Scoring Criteria
+9.5.2.1 Basic (1-2 points): Extremely verbose, redundant technical information.
+9.5.2.2 Developing (3-4 points): Some redundancy, inefficient information delivery.
+9.5.2.3 Competent (5-6 points): Generally concise, some areas need streamlining.
+9.5.2.4 Proficient (7-8 points): Concise and clear, minimal redundancy.
+9.5.2.5 Expert (9-10 points): Optimal balance of brevity and completeness.
+
+9.5.3 Example Cases
+9.5.3.1 Bad Case (1-2 points)
+"We need to think about maybe looking into possibly implementing some kind of optimization for the database queries that we're running in our application because sometimes they seem to be a bit slow and users are complaining about the performance and we should probably do something about it when we have time." This prompt is unnecessarily verbose and indirect.
+
+9.5.3.2 Good Case (9-10 points)
+"Optimize slow-performing database queries: 1) Profile queries with execution time >100ms, 2) Add appropriate indexes, 3) Implement query caching where applicable. Target: reduce average query time to <50ms."
+
+9.6.0 Relevance
+9.6.1 Definition
+Assess how well the prompt aligns with software development goals, technical requirements, and practical implementation needs.
+
+9.6.2 Scoring Criteria
+9.6.2.1 Basic (1-2 points): Largely irrelevant to technical goals and requirements.
+9.6.2.2 Developing (3-4 points): Partially relevant, misaligned with some key objectives.
+9.6.2.3 Competent (5-6 points): Generally relevant, some aspects could be more focused.
+9.6.2.4 Proficient (7-8 points): Highly relevant, well-aligned with objectives.
+9.6.2.5 Expert (9-10 points): Perfect alignment with technical goals and requirements.
+
+9.6.3 Example Cases
+9.6.3.1 Bad Case (1-2 points)
+"Implement a beautiful UI with lots of animations and cool effects for our backend database management system." This prompt focuses on irrelevant aesthetic features for a system where functionality and efficiency are key requirements.
+
+9.6.3.2 Good Case (9-10 points)
+"Implement a database monitoring dashboard displaying: 1) Query performance metrics, 2) Connection pool status, 3) Cache hit rates, 4) Storage usage trends. Use server-sent events for real-time updates. Focus on minimal UI with clear data visualization for quick system health assessment."
+
+9.7.0 Guidance
+9.7.1 Definition
+Evaluate the prompt's effectiveness in providing clear technical direction and actionable steps for software development tasks.
+
+9.7.2 Scoring Criteria
+9.7.2.1 Basic (1-2 points): Lacks clear technical direction or actionable steps.
+9.7.2.2 Developing (3-4 points): Vague guidance, unclear implementation steps.
+9.7.2.3 Competent (5-6 points): Basic guidance provided, some steps unclear.
+9.7.2.4 Proficient (7-8 points): Clear guidance, well-defined implementation steps.
+9.7.2.5 Expert (9-10 points): Excellent technical guidance, perfectly structured steps.
+
+9.7.3 Example Cases
+9.7.3.1 Bad Case (1-2 points)
+"Set up CI/CD." This prompt provides no direction on tools, stages, requirements, or expected outcomes of the CI/CD implementation.
+
+9.7.3.2 Good Case (9-10 points)
+"Implement CI/CD pipeline using GitHub Actions: 1) Configure build stage with Node.js 18 and npm ci, 2) Run unit tests and generate coverage report, 3) Perform static code analysis using ESLint, 4) Build Docker image and push to ECR, 5) Deploy to staging using Helm, 6) Run integration tests, 7) Deploy to production with manual approval. Include rollback procedures and monitoring alerts."
+
+9.8.0 Versatility
+9.8.1 Definition
+Assess the prompt's adaptability across different software development scenarios, technology stacks, and project scales.
+
+9.8.2 Scoring Criteria
+9.8.2.1 Basic (1-2 points): Extremely limited applicability, single-use case only.
+9.8.2.2 Developing (3-4 points): Limited versatility, narrow technical scope.
+9.8.2.3 Competent (5-6 points): Moderate adaptability, some technical limitations.
+9.8.2.4 Proficient (7-8 points): Good versatility, adaptable to most scenarios.
+9.8.2.5 Expert (9-10 points): Highly versatile, applicable across all scenarios.
+
+9.8.3 Example Cases
+9.8.3.1 Bad Case (1-2 points)
+"Write Python script using pandas version 1.5.3 on Windows 10 with specific file path C:\data\input.csv to process data." This prompt is overly specific to a single environment and technology stack, making it unusable in other contexts.
+
+9.8.3.2 Good Case (9-10 points)
+"Create a data processing module that: 1) Accepts input in multiple formats (CSV, JSON, XML), 2) Provides interface for custom data transformations, 3) Supports both batch and streaming processing, 4) Implements adapter pattern for storage backends. Include configuration options for processing rules and output formats."
+
+9.9.0 Overall Effectiveness
+9.9.1 Definition
+Comprehensive evaluation of the prompt's ability to achieve intended software development outcomes.
+
+9.9.2 Scoring Criteria
+9.9.2.1 Basic (1-2 points): Fails to achieve technical objectives.
+9.9.2.2 Developing (3-4 points): Partially achieves objectives with significant gaps.
+9.9.2.3 Competent (5-6 points): Achieves basic objectives with some limitations.
+9.9.2.4 Proficient (7-8 points): Effectively achieves most objectives.
+9.9.2.5 Expert (9-10 points): Perfectly achieves all technical objectives.
+
+9.9.3 Example Cases
+9.9.3.1 Bad Case (1-2 points)
+"Make the software better." This prompt fails in all aspects: no clear objectives, no technical specifications, no success criteria, and no actionable guidance.
+
+9.9.3.2 Good Case (9-10 points)
+"Optimize the e-commerce platform's checkout process: 1) Reduce page load time to <2s, 2) Implement client-side validation with immediate feedback, 3) Add payment gateway redundancy, 4) Implement session management for cart persistence, 5) Add order confirmation emails with tracking info. Success metrics: 20% reduction in cart abandonment, 99.9% payment processing uptime, zero double-charges."
+
 Approach all tasks with excellence, innovation, and practicality. Provide actionable solutions within resource limits. Prioritize practical applications. Include clear implementation steps. Continuously improve to stay at the software industry forefront.
