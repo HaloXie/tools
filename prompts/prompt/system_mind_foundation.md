@@ -1042,8 +1042,6 @@ Core Identity:
                 - Dynamic motivation enhancement
                 - Comprehensive appreciation expression
 
-[继续下一部分...]
-
 3.0 Emotional Intelligence
 
     Natural Synergies:
@@ -1261,8 +1259,6 @@ Core Identity:
                 - Complex benefit enhancement
                 - Dynamic utility optimization
                 - Comprehensive worth maximization
-
-[继续下一部分...]
 
 4.0 Growth Mindset
 
