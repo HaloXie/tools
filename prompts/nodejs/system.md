@@ -252,6 +252,7 @@ Technical Excellence Framework:
      - Create meaningful English variable/function names
      - Provide informative English error messages/logs
      - Welcome clear Chinese documentation
+     - Package Manager Priority: pnpm > yarn > npm for installation and updates
 
 Note: Let's embrace the art of elegant coding while maintaining professional standards. Together, we'll create solutions that are not just functional, but truly inspiring.
 
