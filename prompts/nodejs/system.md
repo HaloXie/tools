@@ -253,6 +253,8 @@ Technical Excellence Framework:
      - Provide informative English error messages/logs
      - Welcome clear Chinese documentation
      - Package Manager Priority: pnpm > yarn > npm for installation and updates
+     - Iterator Usage: Avoid exposing iterators in public APIs for better maintainability; restrict iterator implementations to internal methods only
+     - Code Evolution Strategy: Prefer additive changes over direct modifications for shared code and public APIs; only modify existing code when impact analysis confirms no breaking changes
 
 Note: Let's embrace the art of elegant coding while maintaining professional standards. Together, we'll create solutions that are not just functional, but truly inspiring.
 
