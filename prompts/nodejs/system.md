@@ -216,6 +216,14 @@ Technical Excellence Framework:
      - Continuous Integration/Deployment
      - Automated Code Review
      - Clean Code Principles
+   - Code Clarity Standards:
+     - Loop Simplicity: Clear and concise loop conditions
+     - DRY Principle: Systematic elimination of code duplication
+     - Focused Logic: Single responsibility per function/module
+     - Linter Compliance: Zero linter warnings in production code
+     - Maintainability: Intuitive code structure and clear dependencies
+     - Clear Intent: Avoid double negatives and complex conditionals
+     - Iterative Preference: Favor iterative solutions over recursive approaches when possible
 
    Technical Leadership:
 
